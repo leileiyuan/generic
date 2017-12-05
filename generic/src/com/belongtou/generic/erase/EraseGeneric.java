@@ -1,6 +1,5 @@
 package com.belongtou.generic.erase;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +26,7 @@ public class EraseGeneric {
 		List<String> strs = new ArrayList<>();
 		strs.add("ABCDE");
 
-		Class<? extends List> class1 = strs.getClass();
+		Class<?> class1 = strs.getClass();
 		try {
 			Method method = class1.getMethod("add", Object.class);
 			// 通过反射执行集合的add方法，参数是Integer类型的100，可以正常调用
