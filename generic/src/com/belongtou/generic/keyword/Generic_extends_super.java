@@ -3,7 +3,7 @@ package com.belongtou.generic.keyword;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Generic_extents_super {
+public class Generic_extends_super {
 	
 	// 调用该方法时 list中的数据类型只能String的父亲类型
 	public static void update(List<? super String> list) {}
